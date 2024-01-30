@@ -1,0 +1,19 @@
+<h1 class="h1 text-center mt-3">To-Do list</h1>
+<form class="row mx-auto max-content-width">
+  <div class="col-auto">
+    <input type="email" placeholder="Enter your To-Do" [(ngModel)]="inputData" [ngModelOptions]="{standalone: true}" class="form-control" id="inputField" aria-describedby="inputField">
+  </div>
+  <div class="col-auto">
+    <button type="button" (click)="createToDo()" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+<div class="toDoItems">
+  <div class="d-flex justify-content-between bg-primary p-2 mb-2 text-white" *ngFor="let item of ToDoList">
+    <div>{{ item.description }}</div>
+    <div>
+      <input type="checkbox" [checked]="item.status" (change)="onStatusChange(item)">
+    </div>
+  </div>
+</div>
+
+

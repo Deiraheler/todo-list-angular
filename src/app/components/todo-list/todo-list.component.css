@@ -1,0 +1,9 @@
+.max-content-width {
+  max-width: max-content;
+}
+
+.toDoItems{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
