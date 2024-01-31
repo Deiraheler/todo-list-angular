@@ -11,6 +11,7 @@
   <select [(ngModel)]="filterInput" class="mb-3">
     <option *ngFor="let option of filterOptions" [value]="option.value">{{option.text}}</option>
   </select>
+  <p *ngIf="ToDoList.length == 0" class="h2 text-center">Nothing to show here</p>
   <app-todo-item *ngFor="let item of ToDoList" [item]="item" (statusChange)="onStatusChange(item)"></app-todo-item>
 </div>
 

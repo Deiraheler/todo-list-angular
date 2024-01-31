@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TodoItem } from "../../shared/todo-item";
 import { FormsModule } from "@angular/forms";
-import {JsonPipe, NgForOf} from "@angular/common";
+import {JsonPipe, NgForOf, NgIf} from "@angular/common";
 import {TodoItemComponent} from "../todo-item/todo-item.component";
 
 @Component({
@@ -11,7 +11,8 @@ import {TodoItemComponent} from "../todo-item/todo-item.component";
     FormsModule,
     NgForOf,
     TodoItemComponent,
-    JsonPipe
+    JsonPipe,
+    NgIf
   ],
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.css']
