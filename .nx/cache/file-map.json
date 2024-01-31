@@ -111,7 +111,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "2679245684289183017",
+          "hash": "7086825197375972049",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -134,12 +134,35 @@
           ]
         },
         {
+          "file": "src/app/components/todo-item/todo-item.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/todo-item/todo-item.component.html",
+          "hash": "14062419744196309359"
+        },
+        {
+          "file": "src/app/components/todo-item/todo-item.component.spec.ts",
+          "hash": "8149407800391680656",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/todo-item/todo-item.component.ts",
+          "hash": "12925768860653967271",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
           "file": "src/app/components/todo-list/todo-list.component.css",
-          "hash": "1274373795491775304"
+          "hash": "2758087809865209489"
         },
         {
           "file": "src/app/components/todo-list/todo-list.component.html",
-          "hash": "18119222977622554595"
+          "hash": "18101525381118065711"
         },
         {
           "file": "src/app/components/todo-list/todo-list.component.spec.ts",
@@ -150,14 +173,16 @@
         },
         {
           "file": "src/app/components/todo-list/todo-list.component.ts",
-          "hash": "9700867997069416794",
+          "hash": "1212527330519514305",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/common"
           ]
         },
         {
           "file": "src/app/shared/todo-item.ts",
-          "hash": "1813681295563921260"
+          "hash": "16471892736425785200"
         },
         {
           "file": "src/assets/.gitkeep",

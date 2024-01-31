@@ -1,1 +1,6 @@
-<p>todo-item works!</p>
+<div class="d-flex justify-content-between p-2 mb-2" [ngClass]="{'bg-primary text-white': !item.status, 'bg-secondary text-dark text-decoration-line-through': item.status}">
+  <div>{{ item.description }}</div>
+  <div>
+    <input type="checkbox" [checked]="item.status" (change)="onStatusChange()">
+  </div>
+</div>

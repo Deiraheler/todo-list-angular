@@ -8,12 +8,10 @@
   </div>
 </form>
 <div class="toDoItems">
-  <div class="d-flex justify-content-between bg-primary p-2 mb-2 text-white" *ngFor="let item of ToDoList">
-    <div>{{ item.description }}</div>
-    <div>
-      <input type="checkbox" [checked]="item.status" (change)="onStatusChange(item)">
-    </div>
-  </div>
+  <select [(ngModel)]="filterInput" class="mb-3">
+    <option *ngFor="let option of filterOptions" [value]="option.value">{{option.text}}</option>
+  </select>
+  <app-todo-item *ngFor="let item of ToDoList" [item]="item" (statusChange)="onStatusChange(item)"></app-todo-item>
 </div>
 
 
